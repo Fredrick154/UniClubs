@@ -1,0 +1,164 @@
+/* University Logo */
+.university-logo {
+  display: block;
+  margin: 20px auto;
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+}
+
+/* Large Header Styling */
+.main-header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: white;
+  background: #4b6cb7;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 1.4;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  padding: 20px;
+}
+
+/* Login Card */
+.login-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 350px;
+  text-align: center;
+}
+
+/* Input Field Styling */
+.input-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background: #4b6cb7;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background: #3a579d;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* General Dashboard Styling */
+.dashboard-container {
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f9;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.dashboard-header {
+  background: #004080;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.dashboard-header p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Club Cards */
+.club-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Club Card Links */
+.club-link {
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
+}
+
+.club-link:hover {
+  transform: scale(1.05);
+}
+
+/* Loading & No Clubs Text */
+.loading-text, .no-clubs-text {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    padding: 20px;
+  }
+  .login-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+}

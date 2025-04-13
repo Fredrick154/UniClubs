@@ -1,0 +1,23 @@
+.club-card.joined {
+  opacity: 0.7;
+  border-left: 4px solid #4CAF50;
+}
+
+.join-button {
+  transition: all 0.3s ease;
+}
+
+.join-button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.success-toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+}

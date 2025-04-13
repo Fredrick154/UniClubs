@@ -1,0 +1,64 @@
+.club-events {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .event-form {
+    background: #f5f5f5;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+  }
+  
+  .event-form form {
+    display: grid;
+    gap: 1rem;
+  }
+  
+  .event-form input,
+  .event-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .events-list {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .event-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .event-details {
+    margin-top: 1rem;
+  }
+  
+  .date {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .location {
+    color: #2196F3;
+    font-weight: 500;
+    margin: 0.5rem 0;
+  }
+  
+  .description {
+    color: #444;
+    line-height: 1.6;
+  }

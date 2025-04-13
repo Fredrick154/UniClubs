@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+  @apply bg-gray-100 text-gray-900; /* Tailwind classes for background & text */
+  font-family: Arial, sans-serif; 
+  margin: 0;
+  padding: 0;
+}

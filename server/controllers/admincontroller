@@ -1,0 +1,7 @@
+// server/controllers/adminController.js
+
+exports.dashboard = (req, res) => {
+  res.json({ message: "Welcome to the Admin Dashboard!" });
+};
+
+// Add more functions as needed

@@ -1,0 +1,29 @@
+const express = require("express");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const router = express.Router();
+const db = require("./db"); // your db connection
+
+router.post("/api/auth/login", async (req, res) => {
+  const { admissionNo, password } = req.body;
+
+  const sql = "SELECT * FROM users WHERE admission_number = ?";
+  db.query(sql, [admissionNo], async (err, results) => {
+    if (err) return res.status(500).send({ message: "DB error" });
+    if (results.length === 0) {
+      return res.status(401).send({ message: "Invalid credentials" });
+    }
+
+    const user = results[0];
+    const isMatch = await bcrypt.compare(password, user.password);
+
+    if (!isMatch) {
+      return res.status(401).send({ message: "Invalid credentials" });
+    }
+
+    const token = jwt.sign({ id: user.id, role: user.role }, "your_secret_key", { expiresIn: "1h" });
+    res.send({ message: "Login successful", token });
+  });
+});
+
+module.exports = router;

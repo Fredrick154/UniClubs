@@ -1,0 +1,96 @@
+/* ApproveMemberships.css */
+.approve-memberships-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .no-requests-message {
+    padding: 20px;
+    font-size: 18px;
+    color: #777;
+    font-style: italic;
+  }
+  
+  .membership-requests-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .membership-requests-table th,
+  .membership-requests-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .membership-requests-table th {
+    background: #007bff;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  .membership-requests-table tr:hover {
+    background: #f1f1f1;
+  }
+  
+  .actions-cell {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .approve-btn, .reject-btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .approve-btn {
+    background: #28a745;
+    color: white;
+  }
+  
+  .approve-btn:hover {
+    background: #218838;
+  }
+  
+  .reject-btn {
+    background: #dc3545;
+    color: white;
+  }
+  
+  .reject-btn:hover {
+    background: #c82333;
+  }
+  
+  @media (max-width: 768px) {
+    .membership-requests-table th,
+    .membership-requests-table td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .approve-btn, .reject-btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  

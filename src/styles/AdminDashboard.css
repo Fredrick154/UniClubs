@@ -1,0 +1,108 @@
+/* General Dashboard Styles */
+.dashboard-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 36px;
+  }
+  
+  .dashboard-header p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* Dashboard Stats Section */
+  .dashboard-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .stat-card {
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 45%;
+  }
+  
+  .stat-card h2 {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .stat-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .stat-card ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+  }
+  
+  .action-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .action-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Specific Action Button Styles */
+  .manage-clubs-btn {
+    background-color: #28a745;
+  }
+  
+  .manage-clubs-btn:hover {
+    background-color: #218838;
+  }
+  
+  .review-events-btn {
+    background-color: #ffc107;
+  }
+  
+  .review-events-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .generate-reports-btn {
+    background-color: #6c757d;
+  }
+  
+  .generate-reports-btn:hover {
+    background-color: #5a6268;
+  }
+  
+  .manage-roles-btn {
+    background-color: #17a2b8;
+  }
+  
+  .manage-roles-btn:hover {
+    background-color: #138496;
+  }
+  
